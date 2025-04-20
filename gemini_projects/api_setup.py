@@ -1,4 +1,3 @@
-# your_gemini_projects/api_setup.py
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
@@ -20,7 +19,3 @@ def configure_gemini_api():
         print("Error: GOOGLE_API_KEY not found in environment or .env file.")
     # It might return None, which would cause the error later
     return api_key # Or maybe it doesn't have a return None, implicitly returns None
-
-# You can call this function immediately when the file is imported,
-# or have modules call it themselves. Let's have modules call it.
-# configure_gemini_api()

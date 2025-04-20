@@ -1,13 +1,9 @@
-# c:\Users\shubh\OneDrive\Documents\python exercise\gemini_projects\chat_app.py
-
-# (Keep your other imports like google.generativeai if you need them elsewhere)
 # import google.generativeai as genai
 # from gemini_config import get_configured_model # Or wherever get_text_model/get_multimodal_model is
 
 import sys
 
 # --- Import the packages/modules ---
-# Import text_chat session module if available, wrap in try/except
 text_chat_session_module = None
 try:
     # Import the specific chat_session module from the text_chat package
@@ -58,7 +54,6 @@ def main():
         return # Exit the program if nothing can be run
 
     # --- Display options and get user input ---
-    # ... (rest of your loop code here, it looks correct) ...
     while True: # Loop to allow running multiple sessions or handling invalid input
         print("\nAvailable options:")
         for i, (description, _) in enumerate(options):
@@ -92,6 +87,5 @@ def main():
             print(f"An unexpected error occurred during option selection: {e}", file=sys.stderr)
 
 
-# --- Standard Python entry point ---
 if __name__ == "__main__":
     main()

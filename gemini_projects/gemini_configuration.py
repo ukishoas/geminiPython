@@ -1,4 +1,3 @@
-# gemini_config.py (Modified)
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
